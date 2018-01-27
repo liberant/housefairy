@@ -1,0 +1,8 @@
+{
+  "name": "housefairy",
+  "app_id": "5ca0fbeb",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
