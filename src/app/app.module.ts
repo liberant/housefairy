@@ -3,8 +3,6 @@ import { ErrorHandler, NgModule, Injectable, Injector} from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { Pro } from '@ionic/pro';
 import { HfApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -36,9 +34,7 @@ export class MyErrorHandler implements ErrorHandler {
 
 @NgModule({
   declarations: [
-    HfApp,
-    HomePage,
-    ListPage
+    HfApp
   ],
   imports: [
     BrowserModule,
@@ -46,9 +42,7 @@ export class MyErrorHandler implements ErrorHandler {
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    HfApp,
-    HomePage,
-    ListPage
+    HfApp
   ],
   providers: [
     StatusBar,
