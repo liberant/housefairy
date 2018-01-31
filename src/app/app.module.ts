@@ -6,6 +6,9 @@ import { HfApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AuthProvider } from '../providers/auth/auth';
+import { ChatProvider } from '../providers/chat/chat';
+import { BillsProvider } from '../providers/bills/bills';
 
 const IonicPro = Pro.init('5ca0fbeb', {
 	appVersion: "0.0.1"
@@ -48,7 +51,10 @@ export class MyErrorHandler implements ErrorHandler {
     StatusBar,
     SplashScreen,
     IonicErrorHandler,
-    {provide: ErrorHandler, useClass: MyErrorHandler}
+    {provide: ErrorHandler, useClass: MyErrorHandler},
+    AuthProvider,
+    ChatProvider,
+    BillsProvider
   ]
 })
 export class AppModule {}
